@@ -234,7 +234,7 @@
 				<!-- Six -->
 					<section class="wrapper style1 align-center">
 						<div class="inner">
-							<h2>SERVCIES & FACILITIES</h2>
+							<h2>AMENITIES</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
 							<div class="items style1 medium onscroll-fade-in">
 								<section>
@@ -318,6 +318,204 @@
 						<iframe id="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d493.3381786132372!2d-2.5944224701533005!3d51.45322396289271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718e786b37d57d%3A0x5aebf55573a9f833!2sBaldwin%20St%2C%20Bristol!5e0!3m2!1sen!2suk!4v1645037830268!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 					</div>
 				</section>
+
+				<!-- Details -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<header><h2>RESERVATIONS</h2></header>
+							<script src="assets/js/hider.js"></script>
+							<section>
+								<header>
+									<button id="hider-button" onclick="hideDivOne()">Laundrette Reservations</button>
+								</header>
+								<div class="content" id="laundrette-form">
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" value="" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="email" name="email" id="email" value="" />
+											</div>
+											<div class="field half">
+												<label for="washer-day">Day</label>
+												<select id="washer-day" name="washer-day">
+													<option value="monday">Monday</option>
+													<option value="tuesday">Tuesday</option>
+													<option value="wednesday">Wednesday</option>
+													<option value="thursday">Thurday</option>
+													<option value="friday">Friday</option>
+													<option value="saturday">Saturday</option>
+													<option value="sunday">Sunday</option>
+												</select>
+											</div>
+											<div class="field half">
+												<label for="washer-time">Time</label>
+												<select id="washer-time" name="washer-time">
+													<option value="7-8">7:00AM to 8:00AM</option>
+													<option value="8-9">8:00AM to 9:00AM</option>
+													<option value="9-10">9:00AM to 10:00AM</option>
+													<option value="10-11">10:00AM to 11:00AM</option>
+													<option value="11-12">11:00AM to 12:00PM</option>
+													<option value="12-1">12:00PM to 1:00PM</option>
+													<option value="1-2">1:00PM to 2:00PM</option>
+													<option value="2-3">2:00PM to 3:00PM</option>
+													<option value="3-4">3:00PM to 4:00PM</option>
+													<option value="4-5">4:00PM to 5:00PM</option>
+												</select>
+											</div>
+											<div class="field third">
+												<input type="checkbox" id="book-washer" name="priority" checked />
+												<label for="book-washer">Washer</label>
+											</div>
+											<div class="field third">
+												<input type="checkbox" id="book-dryer" name="priority" />
+												<label for="book-dryer">Dryer</label>
+											</div>
+											<div class="field third">
+												<input type="checkbox" id="book-dry-cleaner" name="priority" />
+												<label for="book-dry-cleaner">Dry Cleaner</label>
+											</div>
+											<div class="field">
+												<label for="message">Additional Requests</label>
+												<textarea name="message" id="message" rows="6"></textarea>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="copy" name="copy" />
+												<label for="copy">Email me a copy of this message</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="human" name="human" checked />
+												<label for="human">I am a human and not a robot</label>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" name="submit" id="submit" value="Book Now" /></li>
+										</ul>
+									</form>
+								</div>
+							<!-- <h3>LAUNDRETTE</h3>
+								<label for="machine-form">Machine:</label>
+								<select id="machine-form" name="machine-form">
+								<option value="washer">Washer</option>
+								<option value="dryer">Dryer</option>
+								<option value="dry-cleaner">Dry Cleaner</option>
+								</select>
+
+								</select>
+								<label for="washer-time">Time:</label>
+								<select id="washer-time" name="washer-time">
+								<option value="7-8">7:00AM to 8:00AM</option>
+								<option value="8-9">8:00AM to 9:00AM</option>
+								<option value="9-10">9:00AM to 10:00AM</option>
+								<option value="10-11">10:00AM to 11:00AM</option>
+								<option value="11-12">11:00AM to 12:00PM</option>
+								<option value="12-1">12:00PM to 1:00PM</option>
+								<option value="1-2">1:00PM to 2:00PM</option>
+								<option value="2-3">2:00PM to 3:00PM</option>
+								<option value="3-4">3:00PM to 4:00PM</option>
+								<option value="4-5">4:00PM to 5:00PM</option>
+								</select>
+							<h3>TABLES</h3>
+								<label for="table-seats">Seating:</label>
+								<select id="table-seats" name="table-seats">
+								<option value="1">Just the One</option>
+								<option value="2">Two</option>
+								<option value="3/4">Three to Four</option>
+								<option value="5/6">Five to Six</option>
+								<option value="7/8">Seven to Eight</option>
+								<option value="9+">More than Eight</option>
+								</select>
+								<label for="table-day">Day:</label>
+								<select id="table-day" name="table-day">
+								<option value="monday">Monday</option>
+								<option value="tuesday">Tuesday</option>
+								<option value="wednesday">Wednesday</option>
+								<option value="thursday">Thurday</option>
+								<option value="friday">Friday</option>
+								<option value="saturday">Saturday</option>
+								<option value="sunday">Sunday</option>
+								</select>
+								<label for="table-time">Time:</label>
+								<select id="table-time" name="table-time">
+								<option value="7-8">7:00AM to 8:00AM</option>
+								<option value="8-9">8:00AM to 9:00AM</option>
+								<option value="9-10">9:00AM to 10:00AM</option>
+								<option value="10-11">10:00AM to 11:00AM</option>
+								<option value="11-12">11:00AM to 12:00PM</option>
+								<option value="12-1">12:00PM to 1:00PM</option>
+								<option value="1-2">1:00PM to 2:00PM</option>
+								<option value="2-3">2:00PM to 3:00PM</option>
+								<option value="3-4">3:00PM to 4:00PM</option>
+								<option value="4-5">4:00PM to 5:00PM</option>
+								<option value="12-1">12:00PM to 1:00PM</option>
+								<option value="1-2">1:00PM to 2:00PM</option>
+								<option value="2-3">2:00PM to 3:00PM</option>
+								<option value="3-4">3:00PM to 4:00PM</option>
+								<option value="4-5">4:00PM to 5:00PM</option>
+								</select> -->
+						<header>
+							<button id="hider-button" onclick="hideDivTwo()">Table Reservations</button>
+						</header>
+						<div class="content" id="tables-form">
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" value="" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" value="" />
+									</div>
+									<div class="field half">
+										<label for="washer-day">Day</label>
+										<select id="washer-day" name="washer-day">
+											<option value="monday">Monday</option>
+											<option value="tuesday">Tuesday</option>
+											<option value="wednesday">Wednesday</option>
+											<option value="thursday">Thurday</option>
+											<option value="friday">Friday</option>
+											<option value="saturday">Saturday</option>
+											<option value="sunday">Sunday</option>
+										</select>
+									</div>
+									<div class="field half">
+										<label for="washer-time">Time</label>
+										<select id="washer-time" name="washer-time">
+											<option value="7-8">7:00AM to 8:00AM</option>
+											<option value="8-9">8:00AM to 9:00AM</option>
+											<option value="9-10">9:00AM to 10:00AM</option>
+											<option value="10-11">10:00AM to 11:00AM</option>
+											<option value="11-12">11:00AM to 12:00PM</option>
+											<option value="12-1">12:00PM to 1:00PM</option>
+											<option value="1-2">1:00PM to 2:00PM</option>
+											<option value="2-3">2:00PM to 3:00PM</option>
+											<option value="3-4">3:00PM to 4:00PM</option>
+											<option value="4-5">4:00PM to 5:00PM</option>
+										</select>
+									</div>
+									<div class="field">
+										<label for="message2">Additional Requests</label>
+										<textarea name="message2" id="message2" rows="6"></textarea>
+									</div>
+									<div class="field half">
+										<input type="checkbox" id="copy2" name="copy2" />
+										<label for="copy2">Email me a copy of this message</label>
+									</div>
+									<div class="field half">
+										<input type="checkbox" id="human2" name="human2" checked />
+										<label for="human2">I am a human and not a robot</label>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" name="submit2" id="submit2" value="Book Now" /></li>
+								</ul>
+							</form>
+						</div>
+					</section>
 				<!-- Seven -->
 					<section class="wrapper style1 align-center">
 						<div class="inner medium">
