@@ -354,16 +354,16 @@
 											<div class="field half">
 												<label for="washer-time">Time</label>
 												<select id="washer-time" name="washer-time">
-													<option value="7-8">7:00AM to 8:00AM</option>
-													<option value="8-9">8:00AM to 9:00AM</option>
-													<option value="9-10">9:00AM to 10:00AM</option>
-													<option value="10-11">10:00AM to 11:00AM</option>
-													<option value="11-12">11:00AM to 12:00PM</option>
-													<option value="12-1">12:00PM to 1:00PM</option>
-													<option value="1-2">1:00PM to 2:00PM</option>
-													<option value="2-3">2:00PM to 3:00PM</option>
-													<option value="3-4">3:00PM to 4:00PM</option>
-													<option value="4-5">4:00PM to 5:00PM</option>
+													<option value="7am">7:00AM</option>
+													<option value="8am">8:00AM</option>
+													<option value="9am">9:00AM</option>
+													<option value="10am">10:00AM</option>
+													<option value="11am">11:00AM</option>
+													<option value="12pm">12:00PM</option>
+													<option value="1pm">1:00PM</option>
+													<option value="2pm">2:00PM</option>
+													<option value="3pm">3:00PM</option>
+													<option value="4pm">4:00PM</option>
 												</select>
 											</div>
 											<div class="field third">
@@ -387,7 +387,7 @@
 												<label for="copy">Email me a copy of this message</label>
 											</div>
 											<div class="field half">
-												<input type="checkbox" id="human" name="human" checked />
+												<input type="checkbox" id="human" name="human" />
 												<label for="human">I am a human and not a robot</label>
 											</div>
 										</div>
@@ -471,6 +471,26 @@
 										<input type="email" name="email" id="email" value="" />
 									</div>
 									<div class="field half">
+										<label for="table-seats">No. of Seats</label>
+										<select id="table-seats" name="table-seats">
+											<option value="1">Just the One</option>
+											<option value="2">Two</option>
+											<option value="3/4">Three to Four</option>
+											<option value="5/6">Five to Six</option>
+											<option value="7/8">Seven to Eight</option>
+											<option value="9+">More than Eight</option>
+										</select>
+									</div>
+									<div class="field half">
+										<label for="table-length">Length of Stay</label>
+										<select id="table-length" name="table-length">
+											<option value="2">Two Hours</option>
+											<option value="4">Four Hours</option>
+											<option value="6">Six Hours</option>
+											<option value="6+">More than Six Hours</option>
+										</select>
+									</div>
+									<div class="field half">
 										<label for="washer-day">Day</label>
 										<select id="washer-day" name="washer-day">
 											<option value="monday">Monday</option>
@@ -485,16 +505,23 @@
 									<div class="field half">
 										<label for="washer-time">Time</label>
 										<select id="washer-time" name="washer-time">
-											<option value="7-8">7:00AM to 8:00AM</option>
-											<option value="8-9">8:00AM to 9:00AM</option>
-											<option value="9-10">9:00AM to 10:00AM</option>
-											<option value="10-11">10:00AM to 11:00AM</option>
-											<option value="11-12">11:00AM to 12:00PM</option>
-											<option value="12-1">12:00PM to 1:00PM</option>
-											<option value="1-2">1:00PM to 2:00PM</option>
-											<option value="2-3">2:00PM to 3:00PM</option>
-											<option value="3-4">3:00PM to 4:00PM</option>
-											<option value="4-5">4:00PM to 5:00PM</option>
+											<option value="7am">7:00AM</option>
+											<option value="8am">8:00AM</option>
+											<option value="9am">9:00AM</option>
+											<option value="10am">10:00AM</option>
+											<option value="11am">11:00AM</option>
+											<option value="12pm">12:00PM</option>
+											<option value="1pm">1:00PM</option>
+											<option value="2pm">2:00PM</option>
+											<option value="3pm">3:00PM</option>
+											<option value="4pm">4:00PM</option>
+											<option value="5pm">5:00PM</option>
+											<option value="6pm">6:00PM</option>
+											<option value="7pm">7:00PM</option>
+											<option value="8pm">8:00PM</option>
+											<option value="9pm">9:00PM</option>
+											<option value="10pm">10:00PM</option>
+											<option value="11pm">11:00PM</option>
 										</select>
 									</div>
 									<div class="field">
@@ -506,7 +533,7 @@
 										<label for="copy2">Email me a copy of this message</label>
 									</div>
 									<div class="field half">
-										<input type="checkbox" id="human2" name="human2" checked />
+										<input type="checkbox" id="human2" name="human2" />
 										<label for="human2">I am a human and not a robot</label>
 									</div>
 								</div>
