@@ -30,7 +30,7 @@
 				margin: 1%;
 			}
 
-			#time-map{
+			#details-grid-area{
 				display: grid;
 				grid-template-areas: 'times map';
 				margin-top: 10%;
@@ -43,6 +43,11 @@
 			#map{
 				grid-area: map;
 			}
+
+			#amenities{
+				padding-left: 10%;
+				padding-right: 10%;
+			}
 			
 			@media only screen and (max-width: 900px){
 				#google_map{
@@ -51,7 +56,7 @@
 					border:0;
 				}
 
-				#time-map{
+				#details-grid-area{
 					display: grid;
 					grid-template-areas: 
 						'times'
@@ -7281,7 +7286,7 @@ input, select, textarea {
 		padding: 7rem 3.5rem 5rem 3.5rem ;
 		margin: 0 auto;
 		max-width: 100%;
-		width: 64rem;
+		width: 88rem;
 	}
 
 		.wrapper.style1 > .inner.medium {
