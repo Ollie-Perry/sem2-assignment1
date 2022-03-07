@@ -36,9 +36,9 @@
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
 							<h2>LAUNDRETTE</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<p><i>Washers</i>, <i>dryers</i> and <i>dry cleaning</i> services all available! Enquire below!</p>
 							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="#reservations-anchor" class="button">Learn More</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -50,9 +50,9 @@
 					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>BAR & CAFÉ</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<p>While your clothes <i>scrub</i> - you can <i>scoff</i> with our extensive catering services!</p>
 							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="#reservations-anchor" class="button">Learn More</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -64,7 +64,7 @@
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>LIVE EVENTS</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<p>Entertainment is our passion here at REBELLION - we book the greatest of local acts to perform within our venue!</p>
 							<ul class="actions stacked">
 								<li><a href="docs/poster.pdf" target="_blank" class="button">Learn More</a></li>
 							</ul>
@@ -78,7 +78,7 @@
 					<section class="wrapper style1 align-center">
 						<div class="inner">
 							<h2>OUR AMENITIES</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+							<p id="amenities">Find out more about all the services within our laundrette and venue below!</p>
 						</div>
 
 						<!-- Gallery -->
@@ -301,32 +301,13 @@
 						</div>
 					</section> -->
 				<!-- Details -->
-				<section class="wrapper style1 align-center">
-					<div class="inner">
-						<h2>OPENING HOURS</h2>
-						<h3>LAUNDRETTE</h3>
-							<p>Mon-Fri: 7:00AM to 5:00PM <br>
-							Sat-Sun: 9:00AM to 4:00PM</p>
-						<h3>CAFÉ</h3>
-							<p>Mon-Fri: 7:00AM to 5:00PM <br>
-							Sat-Sun: 9:00AM to 11:00PM</p>
-						<h3>BAR</h3>
-							<p>Mon-Fri: 2:00PM to 11:00PM <br>
-							Sat-Sun: 2:00PM to 1:00AM</p>
-						<h2>LOCATION</h2>
-						<p>191 Baldwin Street, Bristol, BS1 1QZ</p>
-						<iframe id="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d493.3381786132372!2d-2.5944224701533005!3d51.45322396289271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718e786b37d57d%3A0x5aebf55573a9f833!2sBaldwin%20St%2C%20Bristol!5e0!3m2!1sen!2suk!4v1645037830268!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-					</div>
-				</section>
-
-				<!-- Details -->
 					<section class="wrapper style1 align-center">
 						<div class="inner">
-							<header><h2>RESERVATIONS</h2></header>
+							<header><h2 id="reservations-anchor">RESERVATIONS</h2></header>
 							<script src="assets/js/hider.js"></script>
 							<section>
 								<header>
-									<button id="hider-button" onclick="hideDivOne()">Laundrette Reservations</button>
+									<button id="hider-button" onclick="hideDivOne()">Laundrette</button>
 								</header>
 								<div class="content" id="laundrette-form">
 									<form method="post" action="#">
@@ -457,7 +438,7 @@
 								<option value="4-5">4:00PM to 5:00PM</option>
 								</select> -->
 						<header>
-							<button id="hider-button" onclick="hideDivTwo()">Table Reservations</button>
+							<button id="hider-button" onclick="hideDivTwo()">Tables</button>
 						</header>
 						<div class="content" id="tables-form">
 							<form method="post" action="#">
@@ -543,9 +524,29 @@
 							</form>
 						</div>
 					</section>
+				<!-- Details -->
+					<section id="details-grid-area" class="wrapper style1 align-center">
+						<div id="times">
+							<h2>OPENING HOURS</h2>
+							<h3>LAUNDRETTE</h3>
+								<p>Mon-Fri: 7:00AM to 5:00PM <br>
+								Sat-Sun: 9:00AM to 4:00PM</p>
+							<h3>CAFÉ</h3>
+								<p>Mon-Fri: 7:00AM to 5:00PM <br>
+								Sat-Sun: 9:00AM to 11:00PM</p>
+							<h3>BAR</h3>
+								<p>Mon-Fri: 2:00PM to 11:00PM <br>
+								Sat-Sun: 2:00PM to 1:00AM</p>
+						</div>
+						<div id="map">
+							<h2>LOCATION</h2>
+							<p>191 Baldwin Street, Bristol, BS1 1QZ</p>
+							<iframe id="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d493.3381786132372!2d-2.5944224701533005!3d51.45322396289271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718e786b37d57d%3A0x5aebf55573a9f833!2sBaldwin%20St%2C%20Bristol!5e0!3m2!1sen!2suk!4v1645037830268!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</div>
+					</section>
 				<!-- Seven -->
 					<section class="wrapper style1 align-center">
-						<div class="inner medium">
+						<div class="inner medium" id="less-padding">
 							<h2>Get in touch</h2>
 							<form method="post" action="#">
 								<div class="fields">
@@ -569,9 +570,10 @@
 
 						</div>
 					</section>
+					<img id="logo-footer" src="images/logo-white-crop.png" alt="">
 				<!-- Footer -->
 					<footer class="wrapper style1 align-center">
-						<div class="inner">
+						<div class="inner" id="less-padding">
 							<ul class="icons">
 								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -579,10 +581,8 @@
 								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
-							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 						</div>
 					</footer>
-
 			</div>
 
 		<!-- Scripts -->
